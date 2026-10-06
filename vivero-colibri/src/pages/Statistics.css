@@ -1,0 +1,244 @@
+/* ===== STATISTICS PAGE ===== */
+.stats-bottom {
+  align-items: start;
+}
+
+.stats-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.stats-left > .card:last-child {
+  margin-top: 0 !important;
+}
+
+/* Legend */
+.stats-legend {
+  display: flex;
+  gap: 14px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.legend-green { background: var(--green-primary); }
+.legend-red { background: var(--danger); }
+
+/* Chart Bars */
+.chart-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chart-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chart-bar-label {
+  width: 130px;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.chart-bar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chart-bar-track {
+  height: 22px;
+  background: var(--background-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.chart-bar {
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  min-width: 60px;
+  transition: width 300ms ease;
+}
+
+.chart-bar-ingresos {
+  background: var(--green-primary);
+}
+
+.chart-bar-costos {
+  background: #f87171;
+}
+
+.chart-bar-value {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.chart-bar-ganancia {
+  width: 120px;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--green-primary);
+  text-align: right;
+}
+
+/* Distribution */
+.dist-row-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dist-item {
+  flex: 1;
+  min-width: 140px;
+  padding: 14px;
+  border-radius: var(--radius-md);
+}
+
+.dist-green { background: var(--green-soft); }
+.dist-blue { background: var(--info-soft); }
+.dist-yellow { background: var(--warning-soft); }
+
+.dist-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.dist-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.dist-bar-track {
+  height: 6px;
+  background: rgba(0,0,0,0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dist-bar {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.dist-green .dist-bar { background: var(--green-primary); }
+.dist-blue .dist-bar { background: var(--info); }
+.dist-yellow .dist-bar { background: var(--warning); }
+
+/* Reconciliation */
+.recon-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.recon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.recon-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.recon-status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.recon-ok {
+  color: var(--green-primary);
+}
+
+.recon-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 3px 0;
+  color: var(--text-secondary);
+}
+
+.recon-val {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.green-text {
+  color: var(--green-primary) !important;
+}
+
+/* Cierre */
+.recon-cierre {
+  background: var(--background-secondary);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  margin-top: 4px;
+}
+
+.recon-cierre-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 4px 0;
+  color: var(--text-secondary);
+}
+
+.recon-cierre-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 8px 0;
+}
+
+@media (max-width: 767px) {
+  .chart-bar-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .chart-bar-label {
+    width: 100%;
+  }
+  .chart-bar-ganancia {
+    width: 100%;
+    text-align: left;
+  }
+  .dist-row-group {
+    flex-direction: column;
+  }
+}

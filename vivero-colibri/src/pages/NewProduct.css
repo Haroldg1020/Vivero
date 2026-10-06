@@ -1,0 +1,66 @@
+/* ===== NEW PRODUCT PAGE ===== */
+.np-back {
+  margin-bottom: var(--space-md);
+}
+
+.np-columns {
+  align-items: start;
+}
+
+.np-section-num {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.np-section-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.np-minstock-input {
+  border-color: var(--warning) !important;
+  background: var(--warning-soft) !important;
+}
+
+.np-price-input {
+  border-color: var(--green-primary) !important;
+}
+
+.np-margin-box {
+  background: var(--green-soft);
+  border: 1px solid var(--green-accent);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.np-margin-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.np-margin-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.np-margin-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--green-primary);
+}
+
+.np-indicator {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 10px 12px;
+  background: var(--background-secondary);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}

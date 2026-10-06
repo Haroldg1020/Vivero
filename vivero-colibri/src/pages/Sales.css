@@ -1,0 +1,132 @@
+/* ===== SALES PAGE ===== */
+.sales-filters {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.sales-search {
+  flex: 1;
+  min-width: 250px;
+  position: relative;
+}
+
+.sales-search .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.sales-search .input-field {
+  padding-left: 36px;
+}
+
+.sales-filter-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sales-method-select {
+  width: auto;
+  min-width: 170px;
+}
+
+.sale-id {
+  color: var(--green-primary);
+  font-weight: 700;
+}
+
+.sale-ticket-btn {
+  color: var(--green-primary) !important;
+  border-color: var(--green-primary) !important;
+  font-size: 12px !important;
+}
+
+.sale-ticket-btn:hover {
+  background: var(--green-soft) !important;
+}
+
+.td-muted {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.td-doc {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.td-total {
+  font-weight: 700;
+  color: var(--green-primary);
+}
+
+/* ===== TICKET MODAL ===== */
+.ticket-modal {
+  max-width: 480px;
+}
+
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.ticket-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.ticket-val {
+  font-weight: 600;
+}
+
+.ticket-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 12px 0;
+}
+
+.ticket-items-header {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.ticket-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+.ticket-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 4px 0;
+}
+
+.ticket-total-val {
+  color: var(--green-primary);
+}
+
+@media (max-width: 767px) {
+  .sales-search {
+    min-width: 100%;
+  }
+  .sales-filter-right {
+    width: 100%;
+  }
+}
